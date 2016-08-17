@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\AppCanStudioEnterpriseV3.2\\HDK\\emulator\\mas\\node.exe',
+1 verbose cli   'D:\\Program Files\\AppCanStudioEnterpriseV3.2\\HDK\\emulator\\mas\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'init' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.15
+4 error Error: read ENOTCONN
+4 error     at errnoException (net.js:901:11)
+4 error     at Socket._read (net.js:391:21)
+4 error     at Socket.Readable.read (_stream_readable.js:320:10)
+4 error     at Socket.read (net.js:293:43)
+4 error     at new Socket (net.js:185:10)
+4 error     at process.stdin (node.js:660:19)
+4 error     at read (D:\Program Files\AppCanStudioEnterpriseV3.2\HDK\emulator\mas\node_modules\npm\node_modules\read\lib\read.js:18:36)
+4 error     at PromZard.prompt (D:\Program Files\AppCanStudioEnterpriseV3.2\HDK\emulator\mas\node_modules\npm\node_modules\init-package-json\node_modules\promzard\promzard.js:214:3)
+4 error     at PromZard.L (D:\Program Files\AppCanStudioEnterpriseV3.2\HDK\emulator\mas\node_modules\npm\node_modules\init-package-json\node_modules\promzard\promzard.js:177:21)
+4 error     at PromZard.walk (D:\Program Files\AppCanStudioEnterpriseV3.2\HDK\emulator\mas\node_modules\npm\node_modules\init-package-json\node_modules\promzard\promzard.js:146:5)
+5 error If you need help, you may report this *entire* log,
+5 error including the npm and node versions, at:
+5 error     <http://github.com/npm/npm/issues>
+6 error System Windows_NT 6.1.7601
+7 error command "D:\\Program Files\\AppCanStudioEnterpriseV3.2\\HDK\\emulator\\mas\\node.exe" "D:\\Program Files\\AppCanStudioEnterpriseV3.2\\HDK\\emulator\\mas\\node_modules\\npm\\bin\\npm-cli.js" "init"
+8 error cwd E:\201603node
+9 error node -v v0.10.15
+10 error npm -v 1.4.3
+11 error syscall read
+12 error code ENOTCONN
+13 error errno ENOTCONN
+14 verbose exit [ 1, true ]

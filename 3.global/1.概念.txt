@@ -1,0 +1,30 @@
+
+1、nodejs中全局对象
+-->Nodejs中有一个特殊的对象,称为全局对象Global,它及其所有属性都可以在程序的任何地方访问,即全局变量。
+-->在浏览器JavaScript中,通常window是全局对象,而Nodejs中的全局对象是global
+
+全局对象(可以.来访问的)
+1、伪全局变量
+  还有一些对象实际上是模块内部的局部变量,指向的对象根据模块不同而不同,但是所有模块都适用,可以看作是伪全局变量
+  主要为
+  __filename(当前模块的绝对路径)
+  __dirname(当前文件所在的目录)
+  module
+  module.exports
+  exports
+  等
+
+   -->  console
+   -->  setTimeout     定时器
+   -->  setImmediate   把待办事项推到下个事件队列中(的第一个)执行
+重要-->  process       进程() 代表当前的进程
+         process的属性
+         --> cwd    当前工作目录
+         --> chdir  返回上级目录
+         --> memoryUsage (用途不大) 当前node进程使用的内存数量
+         --> nextTick(用的非常多)
+    -->util
+         -->inherits
+         -->inspect
+         -->
+         -->

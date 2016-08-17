@@ -1,0 +1,1 @@
+var person = require('./person.js');

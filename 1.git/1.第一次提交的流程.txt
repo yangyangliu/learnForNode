@@ -1,0 +1,33 @@
+
+#第一次提交的时候
+1、组长fork项目
+2、组长收集组员的github账号并添加到管理员列表中
+3、组长把自己仓库的地址发给组员
+4、组员clone下来组长的github地址
+   git clone xxxxx  一定要cd切换到对应的目录下面才能执行git命令
+
+5、在自己组的文件夹下建立一个和自己姓名相同的文件夹
+6、在文件夹下面新建一个文本文件
+7、提交到远程仓库
+git add -A          -->(将文件从工作区添加到暂存区)
+git commit -m"张三添加第一次提交" -->(将文件从暂存区添加到历史区)
+git push origin master  --> 把当前的提交推送到远程仓库中
+
+
+8、组长如果观察到所有的组员都已经提交完毕之后,就可以发pullrequest到老师的仓库里
+9、组长到老师的仓库中进行代码的合并代码就可以了
+
+
+
+#第二次提交的时候
+1、先更新代码
+--> 组长更新代码
+git remote add teacher xxxxxxx
+git pull teacher master
+把自己作业放进去
+git add -A    把全部的工作区修改添加到暂存区
+git commit -m"张三添加第二次提交"
+git push origin master
+
+--> 组员更新代码
+git push origin master

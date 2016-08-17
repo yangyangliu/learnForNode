@@ -1,0 +1,32 @@
+1、JS不足
+   -->js没有模块系统,不支持封闭作用域或依赖管理
+   -->没有标准库,没有文件系统API(如何读一个文件、如何写一个文件、如何保存一个文件)
+   -->没有包管理系统,不能自动的加载和安装依赖
+
+2、commonjs规范
+   -->一个nodejs由大量模块组成,每个js文件都是一个模块,每个模块内部的变量都是私有变量
+   -->实现了require方法,npm基于commonjs实现了自动加载和安装依赖
+
+
+3、模块化优点
+   -->增加内聚性,有助分工协作
+   -->方便重构
+   -->提高代码质量
+
+4、模块使用
+   -->定义模块  -创建一个js文件
+   -->导出模块  -exports
+   -->使用模块
+  (function(exports,require,module,__filename,__dirname){
+            return module.exports;
+  });
+
+5、require方法(同步的)
+   -->加载模块后会缓存,多次加载后得到同一对象  require('http')
+   -->查看模块缓存         console.log(require.cache);
+   -->查看模块绝对路径     require.resolve('./test.js');
+   -->查看单个模块缓存     require.cache[require.resolve('./test.js')];
+   -->删除模块缓存         delete
+
+6、导出类和对象
+   -->module.exports和exports的区别

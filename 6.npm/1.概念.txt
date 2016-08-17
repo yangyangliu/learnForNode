@@ -1,0 +1,44 @@
+
+1、包和npm
+   -->多个模块可以封装成一个包
+   -->npm是nodejs默认的模块管理器,用来安装个管理node模块,网址为 http://npmjs.org
+   -->可以用包的方式通过npm安装、卸载、发布包
+
+2、组织和管理模块
+   --> 放置多个模块的文件夹称为包,可以通过包来对一组具有相互依赖的有关系的模块进行管理。
+       初始化一个项目 npm init
+       {
+            "name":"包的名称",
+            "description":"包的简要说明",
+            "version":"版本号",
+            "keywords":"关键字",
+            "licenses":"许可证",
+            "repositories":"仓库地址",
+            "dependencies":"包的依赖,一个关联数组,由包名称和版本组成"
+       }
+
+3、初始化一个项目
+   -->1、新建一个文件夹npmsets
+   -->2、进入文件夹中
+   -->3、在当前文件夹下面右键打开Git Bash Here
+   -->4、执行npm init 初始化一个项目(包)
+   -->5、回答一系列命令问题之后,会生成一个项目(包)描述文件 package.json 文件
+
+   提交到github上面去 (将npmsets这个项目提交到github上面去)
+   -->1、创建git忽略文件
+         touch .gitignore
+
+   -->2、初始化git仓库
+         git init
+
+   -->3、将工作区文件添加到暂存区
+         git add -A
+
+   -->4、将暂存区文件添加到历史区
+         git commit -m"init"
+
+   -->5、添加远程仓库
+         git remote add origin https://github.com/yangyangliu/npmTest.git
+         git push -u origin master
+   -->
+
